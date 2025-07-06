@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StokTakip03
 {
-	public partial class kullaniciGirisi : Form
+	public partial class UrunYonetimi : Form
 	{
-		public kullaniciGirisi()
+		public UrunYonetimi()
 		{
 			InitializeComponent();
 		}
