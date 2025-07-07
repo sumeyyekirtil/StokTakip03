@@ -16,7 +16,11 @@ namespace StokTakip03
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new kullaniciGirisi());
+			Application.Run(new Login());
 		}
 	}
 }
+//private void button1_Click(object sender, EventArgs e)
+//{
+//	MessageBox.Show(cbKategoriler.SelectedItem + "Kategorisine " + txtUrunAdi.Text + "Ürünü Eklendi!");
+//}
