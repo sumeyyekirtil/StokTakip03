@@ -56,9 +56,10 @@ namespace StokTakip03
 		}
 		private void Login_Load(object sender, EventArgs e)
 		{
-			UrunYonetimi urunYonetimi = new UrunYonetimi();
-			urunYonetimi.KullaniciAdi = txtKAdi.Text;
-			urunYonetimi.ShowDialog();
+			//UrunYonetimi urunYonetimi = new UrunYonetimi();
+			//urunYonetimi.KullaniciAdi = txtKAdi.Text;
+			//urunYonetimi.ShowDialog();
+			//label1.Text = " Hoşgeldiniz " + txtKAdi;
 		}
 	}
 }
