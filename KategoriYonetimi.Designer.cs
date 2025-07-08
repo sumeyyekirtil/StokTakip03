@@ -32,11 +32,11 @@
 			this.kategoriYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.btnLogin = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 			this.label2 = new System.Windows.Forms.Label();
+			this.richDetay = new System.Windows.Forms.RichTextBox();
+			this.btnKayıt = new System.Windows.Forms.Button();
+			this.cbKategori = new System.Windows.Forms.ComboBox();
+			this.label1 = new System.Windows.Forms.Label();
 			this.menuStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -71,9 +71,9 @@
 			// groupBox1
 			// 
 			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.richTextBox1);
-			this.groupBox1.Controls.Add(this.button1);
-			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Controls.Add(this.richDetay);
+			this.groupBox1.Controls.Add(this.btnKayıt);
+			this.groupBox1.Controls.Add(this.cbKategori);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(47, 87);
 			this.groupBox1.Name = "groupBox1";
@@ -81,47 +81,6 @@
 			this.groupBox1.TabIndex = 2;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Kategori Bilgileri";
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(19, 46);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(88, 16);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Kategori Sınıfı";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
-            "Meyve",
-            "Sebze",
-            "Şarküteri",
-            "Temizlik",
-            "Atıştırmalık",
-            "Hijyen"});
-			this.comboBox1.Location = new System.Drawing.Point(150, 46);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(121, 24);
-			this.comboBox1.TabIndex = 2;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(459, 263);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(98, 58);
-			this.button1.TabIndex = 9;
-			this.button1.Text = "Kaydet";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// richTextBox1
-			// 
-			this.richTextBox1.Location = new System.Drawing.Point(191, 146);
-			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(223, 149);
-			this.richTextBox1.TabIndex = 10;
-			this.richTextBox1.Text = "";
 			// 
 			// label2
 			// 
@@ -131,6 +90,48 @@
 			this.label2.Size = new System.Drawing.Size(143, 16);
 			this.label2.TabIndex = 11;
 			this.label2.Text = "Kategori Detay Bilgileri";
+			// 
+			// richDetay
+			// 
+			this.richDetay.Location = new System.Drawing.Point(191, 146);
+			this.richDetay.Name = "richDetay";
+			this.richDetay.Size = new System.Drawing.Size(223, 149);
+			this.richDetay.TabIndex = 10;
+			this.richDetay.Text = "";
+			// 
+			// btnKayıt
+			// 
+			this.btnKayıt.Location = new System.Drawing.Point(459, 263);
+			this.btnKayıt.Name = "btnKayıt";
+			this.btnKayıt.Size = new System.Drawing.Size(98, 58);
+			this.btnKayıt.TabIndex = 9;
+			this.btnKayıt.Text = "Kaydet";
+			this.btnKayıt.UseVisualStyleBackColor = true;
+			this.btnKayıt.Click += new System.EventHandler(this.btnKayıt_Click);
+			// 
+			// cbKategori
+			// 
+			this.cbKategori.FormattingEnabled = true;
+			this.cbKategori.Items.AddRange(new object[] {
+            "Meyve",
+            "Sebze",
+            "Şarküteri",
+            "Temizlik",
+            "Atıştırmalık",
+            "Hijyen"});
+			this.cbKategori.Location = new System.Drawing.Point(150, 46);
+			this.cbKategori.Name = "cbKategori";
+			this.cbKategori.Size = new System.Drawing.Size(121, 24);
+			this.cbKategori.TabIndex = 2;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(19, 46);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(88, 16);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Kategori Sınıfı";
 			// 
 			// KategoriYonetimi
 			// 
@@ -158,10 +159,10 @@
 		private System.Windows.Forms.ToolStripMenuItem kategoriYönetimiToolStripMenuItem;
 		private System.Windows.Forms.Button btnLogin;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox cbKategori;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btnKayıt;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.RichTextBox richTextBox1;
+		private System.Windows.Forms.RichTextBox richDetay;
 	}
 }

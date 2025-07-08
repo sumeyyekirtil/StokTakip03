@@ -22,5 +22,10 @@ namespace StokTakip03
 			Login login = new Login();
 			login.ShowDialog();
 		}
+
+		private void btnKayıt_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show(cbKategori.SelectedText + " Kategorisine " + richDetay.Text + " Kaydedildi! ");
+		}
 	}
 }
