@@ -54,9 +54,8 @@ namespace StokTakip03
 		{
 			Application.Exit();
 		}
-
 		private void Login_Load(object sender, EventArgs e)
-		{
+		{ 
 		}
 	}
 }
