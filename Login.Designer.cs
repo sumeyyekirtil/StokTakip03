@@ -58,7 +58,7 @@
 			this.groupBox1.Controls.Add(this.button1);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Location = new System.Drawing.Point(141, 132);
+			this.groupBox1.Location = new System.Drawing.Point(131, 98);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(234, 183);
 			this.groupBox1.TabIndex = 4;
@@ -120,7 +120,7 @@
 			// 
 			this.dgvLogin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvLogin.GridColor = System.Drawing.SystemColors.ActiveCaption;
-			this.dgvLogin.Location = new System.Drawing.Point(420, 132);
+			this.dgvLogin.Location = new System.Drawing.Point(371, 98);
 			this.dgvLogin.Name = "dgvLogin";
 			this.dgvLogin.RowHeadersWidth = 51;
 			this.dgvLogin.RowTemplate.Height = 24;
@@ -137,7 +137,7 @@
             this.çıkışToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+			this.menuStrip1.Size = new System.Drawing.Size(725, 28);
 			this.menuStrip1.TabIndex = 6;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -199,7 +199,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(725, 377);
 			this.Controls.Add(this.dgvLogin);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.menuStrip1);

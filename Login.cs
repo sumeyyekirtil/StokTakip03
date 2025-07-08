@@ -42,7 +42,7 @@ namespace StokTakip03
 				{
 					this.Hide();//bu formu gizle 
 					UrunYonetimi urunYonetimi = new UrunYonetimi();
-					urunYonetimi.Show();
+					urunYonetimi.ShowDialog();
 				}
 				else
 				{
@@ -55,7 +55,10 @@ namespace StokTakip03
 			Application.Exit();
 		}
 		private void Login_Load(object sender, EventArgs e)
-		{ 
+		{
+			UrunYonetimi urunYonetimi = new UrunYonetimi();
+			urunYonetimi.KullaniciAdi = txtKAdi.Text;
+			urunYonetimi.ShowDialog();
 		}
 	}
 }

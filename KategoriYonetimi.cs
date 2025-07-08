@@ -27,5 +27,10 @@ namespace StokTakip03
 		{
 			MessageBox.Show(cbKategori.SelectedText + " Kategorisine " + richDetay.Text + " Kaydedildi! ");
 		}
+
+		private void btnÇıkış_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }

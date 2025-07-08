@@ -37,6 +37,7 @@
 			this.btnKayıt = new System.Windows.Forms.Button();
 			this.cbKategori = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.btnÇıkış = new System.Windows.Forms.Button();
 			this.menuStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.kategoriYönetimiToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+			this.menuStrip1.Size = new System.Drawing.Size(792, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -70,14 +71,15 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.btnÇıkış);
 			this.groupBox1.Controls.Add(this.label2);
 			this.groupBox1.Controls.Add(this.richDetay);
 			this.groupBox1.Controls.Add(this.btnKayıt);
 			this.groupBox1.Controls.Add(this.cbKategori);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(47, 87);
+			this.groupBox1.Location = new System.Drawing.Point(47, 33);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(577, 333);
+			this.groupBox1.Size = new System.Drawing.Size(577, 387);
 			this.groupBox1.TabIndex = 2;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Kategori Bilgileri";
@@ -93,15 +95,15 @@
 			// 
 			// richDetay
 			// 
-			this.richDetay.Location = new System.Drawing.Point(191, 146);
+			this.richDetay.Location = new System.Drawing.Point(168, 143);
 			this.richDetay.Name = "richDetay";
-			this.richDetay.Size = new System.Drawing.Size(223, 149);
+			this.richDetay.Size = new System.Drawing.Size(274, 229);
 			this.richDetay.TabIndex = 10;
 			this.richDetay.Text = "";
 			// 
 			// btnKayıt
 			// 
-			this.btnKayıt.Location = new System.Drawing.Point(459, 263);
+			this.btnKayıt.Location = new System.Drawing.Point(461, 241);
 			this.btnKayıt.Name = "btnKayıt";
 			this.btnKayıt.Size = new System.Drawing.Size(98, 58);
 			this.btnKayıt.TabIndex = 9;
@@ -119,9 +121,9 @@
             "Temizlik",
             "Atıştırmalık",
             "Hijyen"});
-			this.cbKategori.Location = new System.Drawing.Point(150, 46);
+			this.cbKategori.Location = new System.Drawing.Point(168, 46);
 			this.cbKategori.Name = "cbKategori";
-			this.cbKategori.Size = new System.Drawing.Size(121, 24);
+			this.cbKategori.Size = new System.Drawing.Size(184, 24);
 			this.cbKategori.TabIndex = 2;
 			// 
 			// label1
@@ -133,16 +135,27 @@
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Kategori Sınıfı";
 			// 
+			// btnÇıkış
+			// 
+			this.btnÇıkış.Location = new System.Drawing.Point(461, 317);
+			this.btnÇıkış.Name = "btnÇıkış";
+			this.btnÇıkış.Size = new System.Drawing.Size(98, 58);
+			this.btnÇıkış.TabIndex = 12;
+			this.btnÇıkış.Text = "Çıkış";
+			this.btnÇıkış.UseVisualStyleBackColor = true;
+			this.btnÇıkış.Click += new System.EventHandler(this.btnÇıkış_Click);
+			// 
 			// KategoriYonetimi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(792, 450);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.btnLogin);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "KategoriYonetimi";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "KategoriYonetimi";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
@@ -164,5 +177,6 @@
 		private System.Windows.Forms.Button btnKayıt;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.RichTextBox richDetay;
+		private System.Windows.Forms.Button btnÇıkış;
 	}
 }

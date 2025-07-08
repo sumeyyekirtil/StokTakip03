@@ -48,6 +48,7 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.lblMesaj = new System.Windows.Forms.Label();
 			this.menuStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.urunFoto)).BeginInit();
@@ -61,7 +62,7 @@
             this.ürünYönetimiToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+			this.menuStrip1.Size = new System.Drawing.Size(804, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -73,6 +74,7 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.lblMesaj);
 			this.groupBox1.Controls.Add(this.dataGridView1);
 			this.groupBox1.Controls.Add(this.label7);
 			this.groupBox1.Controls.Add(this.listBox1);
@@ -89,9 +91,9 @@
 			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Controls.Add(this.label2);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(24, 40);
+			this.groupBox1.Location = new System.Drawing.Point(23, 31);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(746, 398);
+			this.groupBox1.Size = new System.Drawing.Size(759, 455);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Ürün Bilgileri";
@@ -99,7 +101,7 @@
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(236, 68);
+			this.label7.Location = new System.Drawing.Point(236, 96);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(77, 16);
 			this.label7.TabIndex = 15;
@@ -116,15 +118,15 @@
             "Şarküteri",
             "Hijyen",
             "Deterjan"});
-			this.listBox1.Location = new System.Drawing.Point(523, 28);
+			this.listBox1.Location = new System.Drawing.Point(523, 51);
 			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(190, 180);
+			this.listBox1.Size = new System.Drawing.Size(190, 164);
 			this.listBox1.TabIndex = 14;
 			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(19, 243);
+			this.label6.Location = new System.Drawing.Point(19, 301);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(96, 16);
 			this.label6.TabIndex = 13;
@@ -133,7 +135,7 @@
 			// urunFoto
 			// 
 			this.urunFoto.Image = ((System.Drawing.Image)(resources.GetObject("urunFoto.Image")));
-			this.urunFoto.Location = new System.Drawing.Point(360, 58);
+			this.urunFoto.Location = new System.Drawing.Point(239, 123);
 			this.urunFoto.Name = "urunFoto";
 			this.urunFoto.Size = new System.Drawing.Size(103, 92);
 			this.urunFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +145,7 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(236, 31);
+			this.label5.Location = new System.Drawing.Point(236, 52);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(96, 16);
 			this.label5.TabIndex = 10;
@@ -159,7 +161,7 @@
             "Temizlik",
             "Atıştırmalık",
             "Hijyen"});
-			this.cbKategori.Location = new System.Drawing.Point(360, 28);
+			this.cbKategori.Location = new System.Drawing.Point(360, 49);
 			this.cbKategori.Name = "cbKategori";
 			this.cbKategori.Size = new System.Drawing.Size(121, 24);
 			this.cbKategori.TabIndex = 9;
@@ -177,7 +179,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(19, 165);
+			this.label4.Location = new System.Drawing.Point(19, 199);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(32, 16);
 			this.label4.TabIndex = 7;
@@ -186,7 +188,7 @@
 			// checkBox1
 			// 
 			this.checkBox1.AutoSize = true;
-			this.checkBox1.Location = new System.Drawing.Point(108, 165);
+			this.checkBox1.Location = new System.Drawing.Point(108, 195);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(57, 20);
 			this.checkBox1.TabIndex = 6;
@@ -195,21 +197,21 @@
 			// 
 			// txtPrice
 			// 
-			this.txtPrice.Location = new System.Drawing.Point(108, 113);
+			this.txtPrice.Location = new System.Drawing.Point(108, 138);
 			this.txtPrice.Name = "txtPrice";
 			this.txtPrice.Size = new System.Drawing.Size(100, 22);
 			this.txtPrice.TabIndex = 5;
 			// 
 			// txtUrunSayi
 			// 
-			this.txtUrunSayi.Location = new System.Drawing.Point(108, 68);
+			this.txtUrunSayi.Location = new System.Drawing.Point(108, 96);
 			this.txtUrunSayi.Name = "txtUrunSayi";
 			this.txtUrunSayi.Size = new System.Drawing.Size(100, 22);
 			this.txtUrunSayi.TabIndex = 4;
 			// 
 			// txtUrunAdi
 			// 
-			this.txtUrunAdi.Location = new System.Drawing.Point(108, 31);
+			this.txtUrunAdi.Location = new System.Drawing.Point(108, 49);
 			this.txtUrunAdi.Name = "txtUrunAdi";
 			this.txtUrunAdi.Size = new System.Drawing.Size(100, 22);
 			this.txtUrunAdi.TabIndex = 3;
@@ -217,7 +219,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(19, 116);
+			this.label3.Location = new System.Drawing.Point(19, 141);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(39, 16);
 			this.label3.TabIndex = 2;
@@ -226,7 +228,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(19, 71);
+			this.label2.Location = new System.Drawing.Point(19, 99);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(44, 16);
 			this.label2.TabIndex = 1;
@@ -235,7 +237,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(19, 28);
+			this.label1.Location = new System.Drawing.Point(19, 52);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(58, 16);
 			this.label1.TabIndex = 0;
@@ -244,7 +246,7 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(121, 230);
+			this.dataGridView1.Location = new System.Drawing.Point(121, 276);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
@@ -252,11 +254,20 @@
 			this.dataGridView1.TabIndex = 16;
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
+			// lblMesaj
+			// 
+			this.lblMesaj.AutoSize = true;
+			this.lblMesaj.Location = new System.Drawing.Point(118, 18);
+			this.lblMesaj.Name = "lblMesaj";
+			this.lblMesaj.Size = new System.Drawing.Size(79, 16);
+			this.lblMesaj.TabIndex = 17;
+			this.lblMesaj.Text = "Kullanıcı Adı";
+			// 
 			// UrunYonetimi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(804, 510);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
@@ -296,5 +307,6 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.ListBox listBox1;
 		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.Label lblMesaj;
 	}
 }

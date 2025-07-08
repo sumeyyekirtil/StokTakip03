@@ -16,6 +16,7 @@ namespace StokTakip03
 		{
 			InitializeComponent();
 		}
+		public string KullaniciAdi { get; set; }
 
 		private void button1_Click(object sender, EventArgs e)
 		{
@@ -45,6 +46,7 @@ namespace StokTakip03
 		private void UrunYonetimi_Load(object sender, EventArgs e)
 		{
 			//DataTable tablo = new DataTable();
+			lblMesaj.Text = " Hoşgeldiniz " + KullaniciAdi; //Login sayfasına kullaniciadi prop oluşturdum.
 		}
 	}
 }
