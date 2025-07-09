@@ -60,6 +60,7 @@
 			// 
 			// menuStrip1
 			// 
+			this.menuStrip1.BackColor = System.Drawing.Color.SteelBlue;
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ürünYönetimiToolStripMenuItem,
@@ -68,7 +69,7 @@
             this.loginToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(804, 28);
+			this.menuStrip1.Size = new System.Drawing.Size(810, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -101,6 +102,7 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.BackColor = System.Drawing.Color.LightBlue;
 			this.groupBox1.Controls.Add(this.lblMesaj);
 			this.groupBox1.Controls.Add(this.dgvUrun);
 			this.groupBox1.Controls.Add(this.label7);
@@ -118,9 +120,9 @@
 			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Controls.Add(this.label2);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(23, 31);
+			this.groupBox1.Location = new System.Drawing.Point(33, 56);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(759, 455);
+			this.groupBox1.Size = new System.Drawing.Size(749, 453);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Ürün Bilgileri";
@@ -130,12 +132,12 @@
 			this.lblMesaj.AutoSize = true;
 			this.lblMesaj.Location = new System.Drawing.Point(118, 18);
 			this.lblMesaj.Name = "lblMesaj";
-			this.lblMesaj.Size = new System.Drawing.Size(79, 16);
+			this.lblMesaj.Size = new System.Drawing.Size(0, 16);
 			this.lblMesaj.TabIndex = 17;
-			this.lblMesaj.Text = "Kullanıcı Adı";
 			// 
 			// dgvUrun
 			// 
+			this.dgvUrun.BackgroundColor = System.Drawing.Color.SkyBlue;
 			this.dgvUrun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvUrun.Location = new System.Drawing.Point(22, 276);
 			this.dgvUrun.Name = "dgvUrun";
@@ -155,6 +157,7 @@
 			// 
 			// listBox1
 			// 
+			this.listBox1.BackColor = System.Drawing.Color.SkyBlue;
 			this.listBox1.FormattingEnabled = true;
 			this.listBox1.ItemHeight = 16;
 			this.listBox1.Items.AddRange(new object[] {
@@ -294,7 +297,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(804, 510);
+			this.ClientSize = new System.Drawing.Size(810, 532);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;

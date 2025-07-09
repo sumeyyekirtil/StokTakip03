@@ -38,8 +38,8 @@
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.girişToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.kategoriYonetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ürünYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.groupBox1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -114,6 +114,7 @@
 			// 
 			// menuStrip1
 			// 
+			this.menuStrip1.BackColor = System.Drawing.Color.LightCyan;
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.girişToolStripMenuItem,
@@ -140,19 +141,19 @@
 			this.kategoriYonetimiToolStripMenuItem.Text = "Kategori Yönetimi";
 			this.kategoriYonetimiToolStripMenuItem.Click += new System.EventHandler(this.kategoriYonetimiToolStripMenuItem_Click);
 			// 
-			// çıkışToolStripMenuItem
-			// 
-			this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-			this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-			this.çıkışToolStripMenuItem.Text = "Çıkış";
-			this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
-			// 
 			// ürünYönetimiToolStripMenuItem
 			// 
 			this.ürünYönetimiToolStripMenuItem.Name = "ürünYönetimiToolStripMenuItem";
 			this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
 			this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
 			this.ürünYönetimiToolStripMenuItem.Click += new System.EventHandler(this.ürünYönetimiToolStripMenuItem_Click);
+			// 
+			// çıkışToolStripMenuItem
+			// 
+			this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+			this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+			this.çıkışToolStripMenuItem.Text = "Çıkış";
+			this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
 			// 
 			// Login
 			// 
@@ -165,7 +166,6 @@
 			this.Name = "Login";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Login";
-			this.Load += new System.EventHandler(this.Login_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.menuStrip1.ResumeLayout(false);

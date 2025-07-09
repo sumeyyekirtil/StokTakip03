@@ -54,13 +54,9 @@ namespace StokTakip03
 		{
 			Application.Exit();
 		}
-		private void Login_Load(object sender, EventArgs e)
-		{
-			//UrunYonetimi urunYonetimi = new UrunYonetimi();
-			//urunYonetimi.KullaniciAdi = txtKAdi.Text;
-			//urunYonetimi.ShowDialog();
-			//label1.Text = " Hoşgeldiniz " + txtKAdi;
-		}
+		//private void Login_Load(object sender, EventArgs e)
+		//{
+		//}
 
 		private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
 		{
