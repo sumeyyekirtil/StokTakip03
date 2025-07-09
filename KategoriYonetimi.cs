@@ -32,5 +32,36 @@ namespace StokTakip03
 		{
 			Close();
 		}
+
+		private void seçToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			textBox1.SelectAll();
+		}
+
+		private void kopyalaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			textBox1.Copy();
+		}
+
+		private void yapıştırToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			textBox1.Paste();
+		}
+
+		private void silToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			textBox1.Clear();
+		}
+
+		private void kesToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			textBox1.Cut();
+		}
+
+		private void ürünYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			UrunYonetimi urun = new UrunYonetimi();
+			urun.ShowDialog();
+		}
 	}
 }

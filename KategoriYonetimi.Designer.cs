@@ -28,25 +28,36 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.kategoriYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.btnLogin = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.btnÇıkış = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
-			this.richDetay = new System.Windows.Forms.RichTextBox();
 			this.btnKayıt = new System.Windows.Forms.Button();
 			this.cbKategori = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.btnÇıkış = new System.Windows.Forms.Button();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.richDetay = new System.Windows.Forms.RichTextBox();
+			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.seçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.kopyalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.yapıştırToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.kesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.ürünYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
+			this.contextMenuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
 			// 
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kategoriYönetimiToolStripMenuItem});
+            this.kategoriYönetimiToolStripMenuItem,
+            this.ürünYönetimiToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(792, 28);
@@ -71,18 +82,29 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.richDetay);
+			this.groupBox1.Controls.Add(this.textBox1);
 			this.groupBox1.Controls.Add(this.btnÇıkış);
 			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.richDetay);
 			this.groupBox1.Controls.Add(this.btnKayıt);
 			this.groupBox1.Controls.Add(this.cbKategori);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(47, 33);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(577, 387);
+			this.groupBox1.Size = new System.Drawing.Size(577, 405);
 			this.groupBox1.TabIndex = 2;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Kategori Bilgileri";
+			// 
+			// btnÇıkış
+			// 
+			this.btnÇıkış.Location = new System.Drawing.Point(461, 317);
+			this.btnÇıkış.Name = "btnÇıkış";
+			this.btnÇıkış.Size = new System.Drawing.Size(98, 58);
+			this.btnÇıkış.TabIndex = 12;
+			this.btnÇıkış.Text = "Çıkış";
+			this.btnÇıkış.UseVisualStyleBackColor = true;
+			this.btnÇıkış.Click += new System.EventHandler(this.btnÇıkış_Click);
 			// 
 			// label2
 			// 
@@ -92,14 +114,6 @@
 			this.label2.Size = new System.Drawing.Size(143, 16);
 			this.label2.TabIndex = 11;
 			this.label2.Text = "Kategori Detay Bilgileri";
-			// 
-			// richDetay
-			// 
-			this.richDetay.Location = new System.Drawing.Point(168, 143);
-			this.richDetay.Name = "richDetay";
-			this.richDetay.Size = new System.Drawing.Size(274, 229);
-			this.richDetay.TabIndex = 10;
-			this.richDetay.Text = "";
 			// 
 			// btnKayıt
 			// 
@@ -123,7 +137,7 @@
             "Hijyen"});
 			this.cbKategori.Location = new System.Drawing.Point(168, 46);
 			this.cbKategori.Name = "cbKategori";
-			this.cbKategori.Size = new System.Drawing.Size(184, 24);
+			this.cbKategori.Size = new System.Drawing.Size(230, 24);
 			this.cbKategori.TabIndex = 2;
 			// 
 			// label1
@@ -135,15 +149,76 @@
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Kategori Sınıfı";
 			// 
-			// btnÇıkış
+			// textBox1
 			// 
-			this.btnÇıkış.Location = new System.Drawing.Point(461, 317);
-			this.btnÇıkış.Name = "btnÇıkış";
-			this.btnÇıkış.Size = new System.Drawing.Size(98, 58);
-			this.btnÇıkış.TabIndex = 12;
-			this.btnÇıkış.Text = "Çıkış";
-			this.btnÇıkış.UseVisualStyleBackColor = true;
-			this.btnÇıkış.Click += new System.EventHandler(this.btnÇıkış_Click);
+			this.textBox1.Location = new System.Drawing.Point(168, 146);
+			this.textBox1.Multiline = true;
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(230, 22);
+			this.textBox1.TabIndex = 13;
+			this.textBox1.Text = "Lütfen Detay Bilginizi Alt Alana Giriniz!";
+			// 
+			// richDetay
+			// 
+			this.richDetay.Location = new System.Drawing.Point(22, 200);
+			this.richDetay.Name = "richDetay";
+			this.richDetay.Size = new System.Drawing.Size(376, 175);
+			this.richDetay.TabIndex = 14;
+			this.richDetay.Text = "";
+			// 
+			// contextMenuStrip1
+			// 
+			this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.seçToolStripMenuItem,
+            this.kopyalaToolStripMenuItem,
+            this.yapıştırToolStripMenuItem,
+            this.silToolStripMenuItem,
+            this.kesToolStripMenuItem});
+			this.contextMenuStrip1.Name = "contextMenuStrip1";
+			this.contextMenuStrip1.Size = new System.Drawing.Size(133, 124);
+			// 
+			// seçToolStripMenuItem
+			// 
+			this.seçToolStripMenuItem.Name = "seçToolStripMenuItem";
+			this.seçToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+			this.seçToolStripMenuItem.Text = "Seç";
+			this.seçToolStripMenuItem.Click += new System.EventHandler(this.seçToolStripMenuItem_Click);
+			// 
+			// kopyalaToolStripMenuItem
+			// 
+			this.kopyalaToolStripMenuItem.Name = "kopyalaToolStripMenuItem";
+			this.kopyalaToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+			this.kopyalaToolStripMenuItem.Text = "Kopyala";
+			this.kopyalaToolStripMenuItem.Click += new System.EventHandler(this.kopyalaToolStripMenuItem_Click);
+			// 
+			// yapıştırToolStripMenuItem
+			// 
+			this.yapıştırToolStripMenuItem.Name = "yapıştırToolStripMenuItem";
+			this.yapıştırToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+			this.yapıştırToolStripMenuItem.Text = "Yapıştır";
+			this.yapıştırToolStripMenuItem.Click += new System.EventHandler(this.yapıştırToolStripMenuItem_Click);
+			// 
+			// silToolStripMenuItem
+			// 
+			this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+			this.silToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+			this.silToolStripMenuItem.Text = "Sil";
+			this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
+			// 
+			// kesToolStripMenuItem
+			// 
+			this.kesToolStripMenuItem.Name = "kesToolStripMenuItem";
+			this.kesToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+			this.kesToolStripMenuItem.Text = "Kes";
+			this.kesToolStripMenuItem.Click += new System.EventHandler(this.kesToolStripMenuItem_Click);
+			// 
+			// ürünYönetimiToolStripMenuItem
+			// 
+			this.ürünYönetimiToolStripMenuItem.Name = "ürünYönetimiToolStripMenuItem";
+			this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+			this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
+			this.ürünYönetimiToolStripMenuItem.Click += new System.EventHandler(this.ürünYönetimiToolStripMenuItem_Click);
 			// 
 			// KategoriYonetimi
 			// 
@@ -161,6 +236,7 @@
 			this.menuStrip1.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			this.contextMenuStrip1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -176,7 +252,15 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnKayıt;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.RichTextBox richDetay;
 		private System.Windows.Forms.Button btnÇıkış;
+		private System.Windows.Forms.RichTextBox richDetay;
+		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem seçToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem kopyalaToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem yapıştırToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem kesToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem ürünYönetimiToolStripMenuItem;
 	}
 }

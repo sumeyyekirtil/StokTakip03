@@ -20,33 +20,34 @@ namespace StokTakip03
 
 		private void button1_Click(object sender, EventArgs e)
 		{
+			dgvUrun.ColumnCount = 3;
+			dgvUrun.Columns[0].Name = " Ürün Adı ";
+			dgvUrun.Columns[1].Name = " Sayı ";
+			dgvUrun.Columns[2].Name = " Fiyat ";
+
+			//.selecteddıtem ile tostring özelliği gelir, textbox text özelliği tek. ile açılır!
+			dgvUrun.Rows.Add(cbKategori.SelectedItem.ToString()  , txtUrunAdi.Text, txtUrunSayi.Text, txtPrice.Text);
+
 			MessageBox.Show(cbKategori.SelectedItem + " Kategorisine " + txtUrunSayi.Text + " Kilo " + txtPrice.Text + " Fiyat ile " + txtUrunAdi.Text + " Başarıyla Eklendi!");
-
-			//DataTable tablo = new DataTable();
-			dataGridView1.ColumnCount = 3;
-			dataGridView1.Columns[0].Name = " Ürün Adı ";
-			dataGridView1.Columns[1].Name = " Sayı ";
-			dataGridView1.Columns[2].Name = " Fiyat ";
-
-			dataGridView1.Rows.Add(txtUrunAdi.SelectedText.ToString() , txtUrunSayi.SelectedText.ToString(), txtPrice.SelectedText.ToString());
 		}
-
-		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-			//dataGridView1.ColumnCount = 3;
-			//dataGridView1.Columns[0].Name = " Ürün Adı ";
-			//dataGridView1.Columns[1].Name = " Sayı ";
-			//dataGridView1.Columns[2].Name = " Fiyat ";
-
-			//dataGridView1.Rows.Add(txtUrunAdi.SelectedText.ToString());
-			//dataGridView1.Rows.Add(txtUrunSayi.SelectedText.ToString());
-			//dataGridView1.Rows.Add(txtPrice.SelectedText.ToString());
-		}
-
 		private void UrunYonetimi_Load(object sender, EventArgs e)
 		{
 			//DataTable tablo = new DataTable();
 			lblMesaj.Text = " Hoşgeldiniz " + KullaniciAdi; //Login sayfasına kullaniciadi prop oluşturdum.
+		}
+		private void kategoriYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			KategoriYonetimi kategori = new KategoriYonetimi();
+			kategori.ShowDialog();
+		}
+		private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Login login = new Login();
+			login.ShowDialog();
 		}
 	}
 }

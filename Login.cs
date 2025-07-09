@@ -17,16 +17,8 @@ namespace StokTakip03
 		{
 			InitializeComponent();
 		}
-
 		private void button1_Click(object sender, EventArgs e)
 		{
-			//dgvLogin.ColumnCount = 2;
-			//dgvLogin.Columns[0].Name = "Kullanıcı Adı";
-			//dgvLogin.Columns[1].Name = "Kullanıcı Şifre";
-
-			//dgvLogin.Rows.Add(txtKAdi.SelectedText.ToString());
-			//dgvLogin.Rows.Add(txtSifre.SelectedText.ToString());
-
 			if (string.IsNullOrEmpty(txtKAdi.Text))
 			{
 				MessageBox.Show("Kullanıcı Adı ve Şifre Boş Geçilemez!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -37,6 +29,14 @@ namespace StokTakip03
 			}
 			else
 			{
+				//dgvLogin.ColumnCount = 2;
+				//dgvLogin.Columns[0].Name = "Kullanıcı Adı";
+				//dgvLogin.Columns[1].Name = "Kullanıcı Şifre";
+
+				//dgvLogin.Rows.Add(txtKAdi.SelectedText.ToString());
+				//dgvLogin.Rows.Add(txtSifre.SelectedText.ToString());
+				//MessageBox.Show(txtKAdi.SelectedText + " Adlı Kullanıcı Girişi Onaylandı! ", txtSifre.Text);
+
 				string veritabanindakiKullanici = "Admin", veritabanindakiSifre = "12345";
 				if (txtKAdi.Text == veritabanindakiKullanici && txtSifre.Text == veritabanindakiSifre)
 				{
@@ -60,6 +60,29 @@ namespace StokTakip03
 			//urunYonetimi.KullaniciAdi = txtKAdi.Text;
 			//urunYonetimi.ShowDialog();
 			//label1.Text = " Hoşgeldiniz " + txtKAdi;
+		}
+
+		private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void girişToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Login login = new Login();
+			login.ShowDialog();
+		}
+
+		private void kategoriYonetimiToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			KategoriYonetimi kategori = new KategoriYonetimi();
+			kategori.ShowDialog();
+		}
+
+		private void ürünYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			UrunYonetimi urun = new UrunYonetimi();
+			urun.ShowDialog();
 		}
 	}
 }
